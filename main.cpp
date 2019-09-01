@@ -73,6 +73,7 @@ class Zeta {
     }
 
     void setupLua () {
+        lua.open_libraries(sol::lib::base, sol::lib::package, sol::lib::io, sol::lib::debug, sol::lib::math, sol::lib::bit32);
         Beta::setupLua(lua);
 
         // Have a function we use to create Beta instances
