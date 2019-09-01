@@ -1,0 +1,5 @@
+b = createBeta(92)
+b:setCallback(function ()
+    print("Hi")
+    print("Hello! Val: " .. tostring(b:getValue()))
+end)
